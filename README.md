@@ -78,8 +78,9 @@ After install, type `/` in Claude Code to see them:
   `/seller-consultation`, `/offer-analysis`, `/market-report`, `/lead-followup`, `/open-house-plan`,
   `/transaction-timeline`, `/disclosure-checklist`, `/social-content`, `/objection-handling`,
   `/negotiation-strategy`, `/farming-prospecting`, `/truthful-reporter`.
+- **Review agents** (one per agent): `/compliance-reviewer`, `/listing-reviewer`, `/contract-reviewer`.
 
-Skills also auto-trigger from their description - the slash command is just the explicit way to call one.
+Skills and agents also trigger automatically - the slash command is just the explicit way to call one.
 
 ## Honest scope
 - New repo - starts at **0 stars**. No inflated claims.

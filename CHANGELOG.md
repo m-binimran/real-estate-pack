@@ -9,6 +9,8 @@ Format based on [Keep a Changelog](https://keepachangelog.com/). This project us
 - **Per-skill slash commands** (`commands/` -> `.claude/commands/`): every skill is now directly callable as
   `/<skill-name>` (e.g. `/cma`, `/listing-description`), in addition to the workflow loops. Installer +
   uninstaller updated to copy/remove them.
+- **Per-agent slash commands**: each review agent is callable as `/<agent-name>` (`/compliance-reviewer`,
+  `/listing-reviewer`, `/contract-reviewer`).
 
 ## [0.1.0] - 2026-06-14
 Initial pack. US residential real estate.
