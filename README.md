@@ -71,6 +71,16 @@ reference - wire them in per the folder READMEs.)
 
 ---
 
+## Slash commands
+After install, type `/` in Claude Code to see them:
+- **Workflows** (multi-step): `/list-it`, `/price-it`, `/new-lead`, `/offer-review`, `/close-it`, `/market-update`.
+- **Skills** (one slash command per skill): `/cma`, `/listing-description`, `/buyer-consultation`,
+  `/seller-consultation`, `/offer-analysis`, `/market-report`, `/lead-followup`, `/open-house-plan`,
+  `/transaction-timeline`, `/disclosure-checklist`, `/social-content`, `/objection-handling`,
+  `/negotiation-strategy`, `/farming-prospecting`, `/truthful-reporter`.
+
+Skills also auto-trigger from their description - the slash command is just the explicit way to call one.
+
 ## Honest scope
 - New repo - starts at **0 stars**. No inflated claims.
 - Inspired by the dev-pack methodology ([github.com/m-binimran/dev-pack](https://github.com/m-binimran/dev-pack))

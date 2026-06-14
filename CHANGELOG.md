@@ -3,6 +3,13 @@
 All notable changes to this project are documented here.
 Format based on [Keep a Changelog](https://keepachangelog.com/). This project uses [SemVer](https://semver.org/).
 
+## [Unreleased]
+
+### Added
+- **Per-skill slash commands** (`commands/` -> `.claude/commands/`): every skill is now directly callable as
+  `/<skill-name>` (e.g. `/cma`, `/listing-description`), in addition to the workflow loops. Installer +
+  uninstaller updated to copy/remove them.
+
 ## [0.1.0] - 2026-06-14
 Initial pack. US residential real estate.
 
