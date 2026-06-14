@@ -1,0 +1,31 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          { "type": "command", "command": "python \"$CLAUDE_PROJECT_DIR/.claude/hooks/fair-housing-guard.py\"" },
+          { "type": "command", "command": "python \"$CLAUDE_PROJECT_DIR/.claude/hooks/pii-guard.py\"" },
+          { "type": "command", "command": "python \"$CLAUDE_PROJECT_DIR/.claude/hooks/secret-scan.py\"" }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          { "type": "command", "command": "python \"$CLAUDE_PROJECT_DIR/.claude/hooks/claim-check-guard.py\"" },
+          { "type": "command", "command": "python \"$CLAUDE_PROJECT_DIR/.claude/hooks/superlative-guard.py\"" },
+          { "type": "command", "command": "python \"$CLAUDE_PROJECT_DIR/.claude/hooks/photo-disclosure-guard.py\"" }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          { "type": "command", "command": "python \"$CLAUDE_PROJECT_DIR/.claude/hooks/review-gate.py\"" }
+        ]
+      }
+    ]
+  }
+}

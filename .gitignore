@@ -1,0 +1,18 @@
+# Secrets / client data - never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencies / cache
+node_modules/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# real-estate-pack session markers
+.claude/.real-estate-pack-stop-seen
